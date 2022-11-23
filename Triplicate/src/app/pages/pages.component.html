@@ -1,0 +1,8 @@
+<h1>Triplicate finder</h1>
+<div class="container" data-aos="fade-down">
+    <input [(ngModel)]="inputString" placeholder="Insert digits here please" />
+    <button class="myButton" (click)="findOccurancyWanted()">Check</button>
+    <div *ngFor="let result of resultsArray">
+      <span> Triplicated numbers : {{ result }}</span>
+    </div>
+</div>
